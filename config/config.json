@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ext-library-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/extLibraryDemo/ExtLibraryDemoWebPart.js",
+          "manifest": "./src/webparts/extLibraryDemo/ExtLibraryDemoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js",
+    "jqueryui": "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+  },
+  "localizedResources": {
+    "ExtLibraryDemoWebPartStrings": "lib/webparts/extLibraryDemo/loc/{locale}.js"
+  }
+}
